@@ -70,12 +70,14 @@ color:black;
 }
   .navbar ul > li:hover {
       background-color:#d25540;
+      color:white !important;
   }
   .navbar ul > li:active {
     background-color:#a16c67 ;
   }
   .dropdown-menu a:hover {
     background-color:#d25540;
+    /* color:white; */
 
   }
   .navbar-toggler {

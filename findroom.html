@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/fonts/futura-normal.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -64,18 +65,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h1>Find your next Escape Room </h1>
+                    <h1 class="mt-2 ">Find your next Escape Room </h1>
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
 
-                    <h1 style="font-size:30px;font-weight:bold;">Keyword Search:</h1>
+                    <h1 style="font-size:30px;font-weight:bold;margin-top:20px">Keyword Search:</h1>
 
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1" style="text-align: left;">
-                    <input type="search" name="" id="" style="margin-left:20px">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1" style="text-align: left; padding:10px;">
+                    <input type="search" name="" id="" style="margin-left:20px;border:2px solid #000000;">
 
                 </div>
             </div>
@@ -112,55 +113,63 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <h5>Rating</h5>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <h5 class="mt-1">Rating</h5>
 
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1" style="text-align: left;">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1">
 
-                    <div class="">
+                    <!-- <div class="" style="margin-left:30px; ">
                         1 <input type="range" min="1" max="10"> 10
-                    </div>
+                    </div> -->
+                    <input class="range" type="range" min="0" max="100" value="10" step="1"
+                        onmousemove="rangevalue2.value=value" style="margin-left: 30px;" />
+                    <output id="rangevalue2"></output>
+
+
 
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <h5>Number Player</h5>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <h5 class="mt-1">Number Player</h5>
 
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1" style="text-align: left;">
 
-                    <div class="">
-                        1 <input type="range" min="1" max="10"> 10
-                    </div>
+                    <input class="range" type="range" min="0" max="100" value="10" step="1"
+                        onmousemove="rangevalue1.value=value" style="margin-left: 30px;" />
+                    <output id="rangevalue1"></output>
 
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                     <h5>Average Price per Person </h5>
 
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1" style="text-align: left;">
 
-                    <div class="">
-                        1 <input type="range" min="1" max="10"> 10
-                    </div>
+                    <input class="range" type="range" min="0" max="100" value="10" step="1"
+                        onmousemove="rangevalue3.value=value" style="margin-left: 30px;" />
+                    <output id="rangevalue3"></output>
 
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                     <h5>jumps score </h5>
 
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-1" style="text-align: left;">
 
-                    <input type="checkbox">
+                    <div class="form-check form-check-inline ">
+                        <input type="checkbox" class="form-check-input ml-3" id="materialInline1">
+                        <label class="form-check-label" for="materialInline1"></label>
+                    </div>
 
 
                 </div>
@@ -171,9 +180,12 @@
         </div>
 
     </section>
+
     <!-- Review section -->
-    <section id="review">
+    <section id=" review">
         <div class="container">
+            <hr style="background-color: dimgrey !important;
+             color: rgba(105, 105, 105, 0.301) !important;width: 1000px !important;">
             <div class="row mt-3">
                 <div class="col-sm-4 col-md-4 col-lg-4 col-sm-6">
                     <div class="card">
@@ -210,7 +222,8 @@
 
 
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make
+                                up the bulk
                                 of the card's
                                 content.</p>
 
@@ -254,7 +267,8 @@
                                 </div>
                             </div>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make
+                                up the bulk
                                 of the card's
                                 content.</p>
 
@@ -296,7 +310,8 @@
                                 </div>
                             </div>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make
+                                up the bulk
                                 of the card's
                                 content.</p>
 
@@ -307,7 +322,7 @@
                 </div>
 
             </div>
-            <hr style="background-color: rgba(90, 82, 82, 0.452);">
+
             <!-- second row  -->
             <div class="row mt-3">
                 <div class="col-sm-4 col-md-4 col-lg-4 col-12">
@@ -344,7 +359,8 @@
                                 </div>
                             </div>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make
+                                up the bulk
                                 of the card's
                                 content.</p>
 
@@ -387,7 +403,8 @@
                                 </div>
                             </div>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make
+                                up the bulk
                                 of the card's
                                 content.</p>
 
@@ -430,7 +447,8 @@
                                 </div>
                             </div>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make
+                                up the bulk
                                 of the card's
                                 content.</p>
 
@@ -447,7 +465,7 @@
 
     </section>
     <section id="footersection">
-        <div class="container-fluid">
+        <div class="cont">
             <footer class="page-footer font-small mb-3">
 
                 <!-- Copyright -->
@@ -470,6 +488,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="public/js/script.js"></script>
+
 </body>
 
 </html>

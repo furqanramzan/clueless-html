@@ -64,7 +64,7 @@ font-size: 20px;
     box-shadow: 0px 1px 10px #999;
   }
   #review {
-      margin-top: 140px !important;
+      margin-top: 100px !important;
   }
   .page-footer {    
       padding:0;
@@ -106,6 +106,7 @@ font-size: 20px;
 }
 
 
+
   .navbar ul > li:hover {
       background-color:#d25540;
       color:white !important;
@@ -116,6 +117,7 @@ font-size: 20px;
   .dropdown-menu a:hover {
     background-color:#d25540;
     color:white;
+   
 
   }
   .dropdown-menu a {
@@ -536,4 +538,34 @@ select {
     }
     
     
+    /* responsive design */
+    @media(min-width:1200px){
     
+    }
+   
+    @media(min-width:992px) and (max-width:1199px){
+      .reviewimage {
+        width: 99%;
+        height: 200px;
+      }
+    
+    }
+    @media(min-width:768px) and (max-width:991px){
+      .reviewimage {
+        width: 100%;
+        height: 300px;
+      }
+      .imagedetail {
+        height: 300px;
+      }
+    
+    }
+     @media(max-width: 767px){
+      .reviewimage {
+        width: 100%;
+       
+      }
+      .imagedetail {
+        height: 300px;
+      }
+    } 
